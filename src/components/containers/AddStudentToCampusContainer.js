@@ -6,7 +6,14 @@ import { fetchAllStudentsThunk } from "../../thunks";
 class AddStudentToCampusContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = { studentId: "" };
+    this.state = { studentId: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    imageUrl: "",
+    gpa: "",
+    isValidName: false,
+  };
   }
   componentDidMount() {
     this.props.fetchAllStudents();
